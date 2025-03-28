@@ -39,6 +39,7 @@ print(df)
 
 
 app = Dash()
+server = app.server
 winners = sorted(df["Winner"].unique())
 years = sorted(df["Year"].unique())
 app.layout=[
